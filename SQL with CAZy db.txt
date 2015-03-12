@@ -1,0 +1,24 @@
+# Navigate to proper directory
+$ sqlite3 CAZY.db
+# Now you are in SQL mode
+> .schema
+
+# Tells you what is in the table.
+> .exit
+# gets you out of sqlite
+> CTRL+L
+# Clears screen
+
+> SELECT xxx FROM CAZY_2015_03_11
+
+> SELECT distinct fam from CAZY_2015_03_11;
+# Tells you which families are included in the db
+
+> SELECT distinct fam,num from CAZY_2015_03_11;
+# Tells you which families are included in the db
+
+> SELECT protein from CAZY_2015_03_11 where fam="PL" and num="5"
+# Tells you the protein types from PL5 sub-family.
+
+> SELECT * from CAZY_2015_03_11 where genbank = "AIO26526.1"
+# Gives you the whole record for that genbank ID
